@@ -10,7 +10,7 @@ class MusicPlayer implements Player{
         this.musicList = musicList;
         this.volume = 0;
         this.onOff = false;
-        this.currentSong = new String[0];
+        this.currentSong = "";
         this.index = 0;
     }
 
@@ -26,7 +26,7 @@ class MusicPlayer implements Player{
     public void stop(){
         if (onOff){
             onOff = false;
-            this.currentSong = new String[0];
+            this.currentSong = "";
         }
     }
 

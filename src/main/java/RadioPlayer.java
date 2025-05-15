@@ -17,7 +17,7 @@ class RadioPlayer implements Player{
     public void start(){
         if (!onOff){
             onOff = true;
-            this.station = this.stationLis[0];
+            this.station = this.stationList[0];
         }
     }
 
