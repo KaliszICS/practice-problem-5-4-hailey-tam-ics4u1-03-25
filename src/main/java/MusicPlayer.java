@@ -50,11 +50,11 @@ class MusicPlayer implements Player{
     }
 
     public void next(){
-        this.currentSong = this.musicList[this.index++];
+        this.currentSong = this.musicList[this.index+=1];
     }
 
     public void previous(){
-        this.currentSong =  this.musicList[this.index--];
+        this.currentSong = this.musicList[this.index-=1];
     }
 
     public String getCurrentSong(){

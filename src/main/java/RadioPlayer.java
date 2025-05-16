@@ -48,11 +48,11 @@ class RadioPlayer implements Player{
     }
 
     public void next(){
-        this.station = this.stationList[index++];
+        this.station = this.stationList[this.index+=1];
     }
 
     public void previous(){
-        this.station = this.stationList[index--];
+        this.station = this.stationList[this.index-=1];
     }
 
     public double getStation(){
